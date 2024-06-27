@@ -1,0 +1,58 @@
+.x {
+   font-size: 40px;
+   font-family: "Tiny5", sans-serif;  font-weight: 400;  font-style: normal;
+}
+.block1 {
+}
+.modal {
+position: fixed;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+z-index: 9929;
+background-color: #1a191910;
+display: grid;
+align-items: center;
+justify-content: center;
+overflow-y: auto;
+visibility: hidden;
+opacity: 0;
+transition: opacity .4s; visibility .4s;
+}
+.model__box {
+   position: relative;
+max-width: 500px;
+padding: 25px;
+z-index: 1;
+margin: 20px 10px;
+background-color: rgb(255, 255, 255);
+box-shadow: 23px 17px 9px -2px rgba(34, 60, 80, 0.14);
+transform: scale(0);
+transition: transform .8s;
+}
+.model__close-btn {
+   position: absolute;
+   top: 8px;
+   right: 8px;
+   border: none;
+   background-color: transparent;
+   padding: 8px;
+   cursor: pointer;
+}
+
+.modal.open {
+    visibility: visible;
+opacity: 1;
+   }
+
+   .modal.open .model__box{
+      transform: scale(1);
+   }
+   
+
+.model__box h2{
+   font-weight: 900;
+   font-style: italic;
+}
+
